@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Commands Cheat Sheet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .category {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #007acc;
+      margin-top: 0;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    ul {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Git Commands Cheat Sheet</h1>
+
+  <div class="category">
+    <h2>🔧 Configuration</h2>
+    <ul>
+      <li><code>git config --global user.name "Your Name"</code></li>
+      <li><code>git config --global user.email "you@example.com"</code></li>
+      <li><code>git config --list</code> – Show current config</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>📁 Repository Setup</h2>
+    <ul>
+      <li><code>git init</code> – Create a new repository</li>
+      <li><code>git clone &lt;url&gt;</code> – Clone an existing repository</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>📄 Basic Workflow</h2>
+    <ul>
+      <li><code>git status</code> – Show working tree status</li>
+      <li><code>git add &lt;file&gt;</code> – Add file to staging</li>
+      <li><code>git add .</code> – Add all changes</li>
+      <li><code>git commit -m "message"</code> – Commit changes</li>
+      <li><code>git push</code> – Push changes to remote</li>
+      <li><code>git pull</code> – Fetch and merge remote changes</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🧭 Branching</h2>
+    <ul>
+      <li><code>git branch</code> – List branches</li>
+      <li><code>git branch &lt;name&gt;</code> – Create branch</li>
+      <li><code>git checkout &lt;name&gt;</code> – Switch branch</li>
+      <li><code>git checkout -b &lt;name&gt;</code> – Create & switch</li>
+      <li><code>git merge &lt;branch&gt;</code> – Merge branch</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🧹 Undoing Changes</h2>
+    <ul>
+      <li><code>git restore &lt;file&gt;</code> – Restore file</li>
+      <li><code>git reset &lt;file&gt;</code> – Unstage file</li>
+      <li><code>git reset --hard</code> – Discard all changes</li>
+      <li><code>git revert &lt;commit&gt;</code> – Undo commit</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>📜 History</h2>
+    <ul>
+      <li><code>git log</code> – Show commit history</li>
+      <li><code>git log --oneline</code></li>
+      <li><code>git show &lt;commit&gt;</code> – Show details</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🌐 Remote Repos</h2>
+    <ul>
+      <li><code>git remote -v</code> – Show remotes</li>
+      <li><code>git remote add origin &lt;url&gt;</code></li>
+      <li><code>git push -u origin main</code></li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🔍 Stashing</h2>
+    <ul>
+      <li><code>git stash</code> – Save changes temporarily</li>
+      <li><code>git stash pop</code> – Reapply stashed changes</li>
+    </ul>
+  </div>
+
+</body>
+</html>
